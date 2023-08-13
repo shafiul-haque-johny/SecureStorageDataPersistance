@@ -12,7 +12,7 @@ class ButtonWidget extends StatelessWidget {
     return ElevatedButton(
       style: ElevatedButton.styleFrom(
         minimumSize: const Size.fromHeight(52),
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.lightGreenAccent,
         elevation: 5,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(25),

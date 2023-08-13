@@ -13,6 +13,7 @@ class TitleWidget extends StatelessWidget {
           Icon(
             icon,
             size: 100,
+            color: Colors.deepPurple,
           ),
           const SizedBox(height: 16),
           Text(
@@ -20,6 +21,7 @@ class TitleWidget extends StatelessWidget {
             style: const TextStyle(
               fontSize: 42,
               fontWeight: FontWeight.w400,
+              color: Colors.amber,
             ),
             textAlign: TextAlign.center,
           )
