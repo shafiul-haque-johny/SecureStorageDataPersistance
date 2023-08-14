@@ -52,7 +52,9 @@ class _BirthdayWidgetState extends State<BirthdayWidget> {
           decoration: const InputDecoration(
             prefixText: '',
             hintText: 'Your Birthday',
-            prefixIcon: Icon(Icons.calendar_today_rounded),
+            prefixIcon: Icon(
+              Icons.calendar_today_rounded,
+            ),
             border: OutlineInputBorder(),
           ),
         ),

@@ -11,7 +11,7 @@ class PetsButtonsWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final background = Theme.of(context).unselectedWidgetColor;
-    final allPets = ['Dog', 'Cats', 'Other'];
+    final allPets = ['Horse', 'Dog', 'Cats', 'Other'];
 
     return Container(
       alignment: Alignment.centerLeft,
@@ -22,8 +22,8 @@ class PetsButtonsWidget extends StatelessWidget {
         ),
         child: ToggleButtons(
           isSelected: allPets.map((pet) => pets.contains(pet)).toList(),
-          selectedColor: Colors.white,
-          color: Colors.white,
+          color: Colors.amber[700],
+          selectedColor: Colors.purple[500],
           fillColor: Theme.of(context).hintColor,
           borderRadius: BorderRadius.circular(10),
           renderBorder: false,
