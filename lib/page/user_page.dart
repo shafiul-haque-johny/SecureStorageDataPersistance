@@ -4,6 +4,7 @@ import 'package:secure_storage_sample/widget/title_widget.dart';
 import 'package:secure_storage_sample/widget/birthday_widget.dart';
 import 'package:secure_storage_sample/widget/button_widget.dart';
 import 'package:secure_storage_sample/widget/pets_buttons_widget.dart';
+import '../utils/storage_data.dart';
 
 class UserPage extends StatefulWidget {
   const UserPage({
@@ -101,6 +102,20 @@ class _UserPageState extends State<UserPage> {
           if (birthday != null) {
             await UserSecureStorage.setBirthday(birthday!);
           }
+
+          // Saving Data into new page.
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (context) => Container(
+                child: StorageData(
+                  controllerName: controllerName.text,
+                  birthday: birthday,
+                  // have to add pets list
+                  pets: [],
+                ),
+              ),
+            ),
+          );
         },
       );
 
